@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
-	'database' => '',
+	'hostname' => MainSiteConfig::get_item('db_host'),
+	'username' => MainSiteConfig::get_item('db_user'),
+	'password' => MainSiteConfig::get_item('db_password'),
+	'database' => MainSiteConfig::get_item('db_name'),
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

@@ -35,7 +35,7 @@
  * @since	Version 1.0.0
  * @filesource
  */
-
+require_once './system_config.php';
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
