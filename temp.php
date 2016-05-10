@@ -41,11 +41,12 @@
 * @property CI_Xmlrpcs $xmlrpcs
 * @property CI_Zip $zip
 * @property Themelib $themelib
-* @property Userlib $userlib
+* @property Accountlib $accountlib
 * @property Main_model $main_model
  * @property Profile_model $profile_model
  * @property Ganres_model $ganres_model
  * @property User_model $user_model
+ * @property Account_model $account_model
  * @property Emailsmtp $emailsmtp
 */
 

@@ -23,7 +23,7 @@
                                        ),
             'non_image_action'      => '/assets/images/non_image_action.png'  // Изображение, которое отображается, если не задано изображение в рекламной акции
         );
-        
+
         private static $profi_parametrs = array(
             'profi_about_length'          => 500,  // Длина текста  краткой информации для PROFI
             'non_profi_about_length'      => 300,  // Длина текста  краткой информации для всех
@@ -34,9 +34,9 @@
             'non_profi_best_photos'       => 5,    // Колчиество работ в разделе Лучшие работы для всех
             'profi_actions'               => 6,    // Количество рекламных акций для PROFI
             'non_profi_actions'               => 3 // Количество рекламных акций для всех
-            
+
         );
-        
+
 
 
         private static $rating_value = array(
@@ -55,8 +55,8 @@
             'profi'      => 100,   // Баллы рейтинга за покупку статуса PROFI,
             'profi_cost' => 100   // стоимость статуса PROFI за месяц
         );
-        
-        
+
+
         private static $robokassa_settings = array(
             'merchant_id'      => 'astanaphotopro',
             'password_1'       => 'rI1y6K3FvILPrlxs9f0X',
@@ -70,8 +70,8 @@
         {
             return self::$profi_parametrs[$key];
         }
-        
-        
+
+
         public static function get_rating_value($key)
         {
             return self::$rating_value[$key];
@@ -81,17 +81,28 @@
         {
             return self::$outer_config[$key];
         }
-        
-        
+
+
         public static function get_robokassa_item($key)
         {
             return self::$robokassa_settings[$key];
         }
-        
+
     }
 
 
-//  Пароль 1  - 
-//  Пароль 2  -      
-//  Тест 1  - 
-//  Тест 2  -     
+    class ErrorMessages{
+        
+        private static $errors = array(
+            'fill_all_fileds'    => 'Заполните все поля.',
+            'email_valid'        => 'Введите Email верно.',
+            'birthday'           => 'Введите дату правильно.',
+            'email_not_free'     => 'Этот Email уже используется в сервисе! Введите другой Email.',
+            'not_email_password' => 'Email или пароль введен неверно.'
+        );
+        
+        public static function get_error($key)
+        {
+            return self::$errors[$key];
+        }
+    }

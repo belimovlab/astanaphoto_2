@@ -61,6 +61,8 @@ class Emailsmtp {
             $this->SPApiProxy->smtpSendMail( $email );
             $res =  ob_get_clean();
 
+            return $res;
+            
         }
 }
 
